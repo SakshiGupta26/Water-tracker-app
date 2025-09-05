@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Daily Water Tracker</title>
+  <link rel="stylesheet" href="water.css">
+</head>
+<body>
+  <main class="wrap">
+    <header>
+      <h1>Daily Water Tracker</h1>
+      <p id="date"></p>
+    </header>
+    <section class="tracker">
+      <div class="bottle">
+        <div class="water" id="water"></div>
+        <div class="percent" id="percent">0%</div>
+      </div>
+      <div class="info">
+        <p id="goalText">Goal: 2000 ml</p>
+        <p>Drank: <span id="currentText">0 ml</span></p>
+        <p>Remaining: <span id="remaining">2000 ml</span></p>
+      </div>
+    </section>
+    <section class="controls">
+      <button id="addGlass">+ Add 250ml</button>
+      <input type="number" id="customAmount" placeholder="Enter ml" />
+      <button id="addCustom">Add Custom</button>
+      <button id="undo">Undo</button>
+      <button id="reset">Reset</button>
+    </section>
+    <section class="settings">
+       <section class="settings">
+  <label>
+    Select Age Group:
+    <select id="ageGroup">
+      <option value="">-- Choose Age Group --</option>
+      <option value="infant">Infants (0–6 months)</option>
+      <option value="child4to8">Children (4–8 years)</option>
+      <option value="child9to13">Children (9–13 years)</option>
+      <option value="teen">Teens (14–18 years)</option>
+      <option value="adultM">Adult Men</option>
+      <option value="adultF">Adult Women</option>
+    </select>
+  </label>
+
+  <label id="goalLabel">
+    Daily Goal:
+    <input type="number" id="goalInput" value="2000" /> ml
+  </label>
+  <label>
+    <input type="checkbox" id="autosave" checked /> Auto Save
+  </label>
+</section>
+
+      <label>
+        Daily Goal:
+        <input type="number" id="goalInput" value="2000" /> ml
+      </label>
+      <label>
+        <input type="checkbox" id="autosave" checked /> Auto Save
+      </label>
+    </section>
+
+    <section class="log" id="log">
+      
+    </section>
+  </main>
+
+<audio id="waterSound" src="C:\Users\SAKSHI GUPTA\Downloads\pouring-glass-of-water-104819 (1).mp3" preload="auto"></audio>
+<p style="font-size: 12px; text-align: center; margin-top: 20px;">
+  Sound Effect by 
+  <a href="C:\Users\SAKSHI GUPTA\Downloads\pouring-glass-of-water-104819 (1).mp3" target="_blank">
+    freesound_community
+  </a> 
+  from 
+  <a href="C:\Users\SAKSHI GUPTA\Downloads\pouring-glass-of-water-104819 (1).mp3" target="_blank">
+    Pixabay
+  </a>
+</p>
+
+  <script src="water.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+</body>
+</html>
