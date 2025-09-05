@@ -82,6 +82,7 @@ header p {
   margin: 5px 0;
   font-size: 1rem;
 }
+
 .controls {
   display: flex;
   flex-wrap: wrap;
@@ -123,6 +124,7 @@ header p {
   display: block;
   margin-bottom: 8px;
 }
+
 .log {
   max-height: 200px;
   overflow-y: auto;
@@ -137,3 +139,4 @@ header p {
   border-bottom: 1px solid #eee;
   font-size: 0.9rem;
 }
+
