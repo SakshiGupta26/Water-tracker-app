@@ -70,10 +70,6 @@ function add(amount) {
   state.log.push({ amount: amount, time: Date.now() });
   state.drank = Math.min(state.drank, Math.round(state.goal * 1.5));
 
-  if (waterSound) {
-    waterSound.currentTime = 0;
-    waterSound.play().catch(() => {});
-  }
 
   render();
   save();
@@ -119,3 +115,4 @@ document.getElementById("date").textContent = new Date().toDateString();
 
 load();
 render();
+
