@@ -71,6 +71,7 @@ function add(amount) {
   state.drank = Math.min(state.drank, Math.round(state.goal * 1.5));
 
 
+
   render();
   save();
 }
